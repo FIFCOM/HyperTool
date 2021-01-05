@@ -1,2 +1,2 @@
 # HyperTool
- HyperTool - A tool box
+ HyperTool - A tool box [Beta]
