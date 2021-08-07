@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="https://fifcom.cn/avatar/?transparent=1"/>
+    <style>.center {
+        text-align: center
+    }</style>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+            integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+            crossorigin="anonymous"
+    />
+    <title>GeoIP - HyperTool</title>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-indigo mdui-theme-layout-auto mdui-loaded">
+<header class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-theme">
+        <a href="#" class="mdui-typo-headline">GeoIP - HyperTool</a>
+    </div>
+</header>
+
+<div class="mdui-container doc-container">
+    <div class="mdui-textfield mdui-textfield-floating-label">
+        <i class="mdui-icon material-icons">search</i>
+        <label class="mdui-textfield-label">IP地址 / 域名</label>
+        <input type="text" id="query" class="mdui-textfield-input"/>
+    </div>
+    <div class="mdui-row-xs-3">
+        <div class="mdui-col">
+        </div>
+        <div class="mdui-col">
+          <button class="mdui-btn mdui-btn-block mdui-btn-raised mdui-ripple" id="btn" onclick="query()">查询</button>
+        </div>
+      </div>
+<ul class="mdui-list">
+  <li class="mdui-list-item mdui-ripple">
+    <i class="mdui-list-item-icon mdui-icon material-icons">near_me</i>
+    <div class="mdui-list-item-content" id="ip">IP : </div>
+  </li>
+  <li class="mdui-list-item mdui-ripple">
+    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+    <div class="mdui-list-item-content" id="country">国家 : </div>
+  </li>
+  <li class="mdui-list-item mdui-ripple">
+    <i class="mdui-list-item-icon mdui-icon material-icons">location_searching</i>
+    <div class="mdui-list-item-content" id="region">省 / 州 : </div>
+  </li>
+  <li class="mdui-list-item mdui-ripple">
+    <i class="mdui-list-item-icon mdui-icon material-icons">location_on</i>
+    <div class="mdui-list-item-content" id="city">城市 : </div>
+  </li>
+  <li class="mdui-list-item mdui-ripple">
+    <i class="mdui-list-item-icon mdui-icon material-icons">map</i>
+    <div class="mdui-list-item-content" id="latlon">经纬度 : </div>
+  </li>
+  <li class="mdui-list-item mdui-ripple">
+    <i class="mdui-list-item-icon mdui-icon material-icons">language</i>
+    <div class="mdui-list-item-content" id="isp">ISP : </div>
+  </li>
+  <li class="mdui-list-item mdui-ripple">
+    <i class="mdui-list-item-icon mdui-icon material-icons">group</i>
+    <div class="mdui-list-item-content" id="org">组织 : </div>
+  </li>
+  <li class="mdui-list-item mdui-ripple">
+    <i class="mdui-list-item-icon mdui-icon material-icons">code</i>
+    <div class="mdui-list-item-content" id="as">ASN : </div>
+  </li>
+</ul>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+        integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+        crossorigin="anonymous"
+></script>
+<script src="ht_geoip.js"></script>
+</body>
+</html>
