@@ -19,7 +19,7 @@ function query() {
                 document.getElementById('country').innerHTML = '国家 : ' + res['country']
                 document.getElementById('region').innerHTML = '省 / 州 : ' + res['region']
                 document.getElementById('city').innerHTML = '城市 : ' + res['city']
-                document.getElementById('latlon').innerHTML = '经纬度 : ' + res['lat'] + ',' + res['lon']
+                document.getElementById('latlon').innerHTML = '经纬度 : ' + res['lon'] + ',' + res['lat']
                 document.getElementById('isp').innerHTML = 'ISP : ' + res['isp']
                 document.getElementById('org').innerHTML = '组织 : ' + res['org']
                 document.getElementById('as').innerHTML = 'ASN : ' + res['as']
